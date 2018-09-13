@@ -1,0 +1,63 @@
+.interview-form__error {
+	position: absolute;
+	bottom: -29px;
+	right: 0;
+
+	display: none;
+
+	font-size: 14px;
+
+	color: #d22856;
+	text-transform: uppercase;
+}	
+
+.interview-form--validation-error input:required {
+
+	&:invalid {
+		border-color: red;
+	}
+
+	&:valid {
+		border-color: lightgreen;
+
+		transition-property: border-color;
+		transition-duration: 0.3s;
+	}
+
+	&:invalid + .interview-form__error { 
+		display: inline-block;
+	}
+
+	&:valid + .interview-form__error {
+		display: none;
+	}
+} 
+
+
+
+@media @tablet-width {
+
+	.interview-form__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.interview-form__error--email {
+		bottom: 15px;
+	}
+
+}
+
+@media @desktop-width {
+
+	.interview-form__wrapper {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		width: 940px;
+
+		margin: 0 auto;
+	}
+
+}

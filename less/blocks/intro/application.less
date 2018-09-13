@@ -1,0 +1,99 @@
+.application--in-intro {
+	padding-top: 28px;
+	padding-bottom: 29px;
+}
+
+.application__download {
+	margin-bottom: 32px;
+}
+
+.application__platforms-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 36px;
+	margin-bottom: 23px;
+	padding: 0;
+
+	list-style: none;
+}
+
+.application__link {
+	display: block;
+	width: 47px;
+	height: 56px;
+
+	font-size: 0;
+
+	&--iOS {
+		background-image: url("../img-min/iOS-app.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&--android {
+		background-image: url("../img-min/android-app.svg");
+		background-repeat: no-repeat;
+		background-position: left bottom;	
+	}
+
+	&--windows {
+		background-image: url("../img-min/windows-app.svg");
+		background-repeat: no-repeat;
+		background-position: left 9px;
+	}
+}
+
+.application__description {
+	margin-bottom: 0;
+
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 24px;
+	
+	color: #ffffff;
+	text-align: center;
+}
+
+@media @tablet-width {
+
+	.application {
+		width: 300px;
+
+		&--in-intro {
+			padding-top: 0;
+			padding-bottom: 88px;	
+		}
+	}
+
+	.application__download {
+		margin-bottom: 46px;
+	}
+
+	.application__platforms-list {
+		margin: 0 46px;
+		margin-bottom: 37px;
+	}
+
+	.application__description {
+		font-size: 18px;
+	}
+
+}
+
+@media @desktop-width {
+
+	.application--in-intro {
+		padding-bottom: 117px;
+	}
+
+	.application__download {
+		margin-bottom: 68px;
+	}
+
+	.application__platforms-list {
+		margin-bottom: 55px;
+	}
+
+}

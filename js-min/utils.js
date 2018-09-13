@@ -1,0 +1,1 @@
+"use strict";window.utils={isEnterPress:function(s,e){13==s.keyCode&&e()},isEscPress:function(s,e){27==s.keyCode&&e()}};

@@ -1,0 +1,42 @@
+.reviews--position {
+	margin-bottom: 41px;
+}
+
+.reviews__wrapper {
+	.container();
+}
+
+@media @tablet-width {
+
+	.reviews--position {
+		margin-bottom: 19px;
+	}
+
+}
+
+@media @desktop-width {
+
+	.reviews--position {
+		margin-bottom: 39px;
+	}
+
+	.reviews-wrapper { 
+		position: relative;
+
+		&::before {
+			content: "";
+
+			position: absolute;
+			top: 84px;
+			left: 50%;
+
+			width: 79px;
+			height: 63px;
+			margin-left: -39.5px;
+
+			background-image: url("../img-min/quotes.svg");
+			background-repeat: no-repeat;
+		}	
+	}
+
+}

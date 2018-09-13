@@ -1,0 +1,127 @@
+.upload-form {
+	padding-top: 20px;
+	padding-bottom: 41px;
+
+	background-color: #f2f2f2;
+}
+
+.upload-form__wrapper {
+	.container();
+}
+
+.upload-form__image-item {
+	display: block;
+}
+
+.upload-form__input {
+	display: none;
+}
+
+.upload-form__filters-controls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin: 0;
+	padding-top: 42px;
+}
+
+.upload-form__filter-image {
+	display: block;
+	cursor: pointer;
+
+	fill: rgba(40, 54, 69, 0.3);
+
+	&:hover {
+		fill: rgba(40, 54, 69, 0.5);
+	}
+}
+
+.upload-form__input[value="filter-crop"]:checked ~ .upload-form__filters-controls .upload-form__filter-image--crop {
+	fill: #d22856;
+}
+
+.upload-form__input[value="filter-fill"]:checked ~ .upload-form__filters-controls .upload-form__filter-image--fill {
+	fill: #d22856;
+}
+
+.upload-form__input[value="filter-contrast"]:checked ~ .upload-form__filters-controls .upload-form__filter-image--contrast {
+	fill: #d22856;
+}
+
+.upload-form__buttons {
+	margin: 0;
+	padding-top: 38px;
+}
+
+.upload-form__buttons .button:first-child {
+	margin-bottom: 12px;
+}
+
+@media @tablet-width {
+
+	.upload-form {
+		padding-top: 57px;
+		padding-bottom: 54px;
+	}
+
+	.upload-form__wrapper {
+		display: flex;
+
+		justify-content: space-between;
+	}
+
+	.upload-form__settings {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.upload-form__filters-controls {
+		display: none;
+	}
+
+	.upload-form__buttons {
+		padding-top: 0;
+		padding-left: 4px;
+		width: 261px;
+	}
+
+	.upload-form__buttons .button:first-child {
+		margin-bottom: 24px;
+	}
+
+}
+
+@media @desktop-width {
+
+	.upload-form {
+		padding: 0;
+
+		background-color: #ffffff; 
+	}
+
+	.upload-form__wrapper {
+		box-sizing: border-box;
+
+		padding-top: 57px;
+		padding-right: 60px;
+		padding-bottom: 57px;
+		padding-left: 80px;
+
+		background-color: #f2f2f2;
+	}
+
+	.upload-form__buttons {
+		display: flex;
+		justify-content: space-between;
+
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.upload-form__buttons .button:first-child {
+		margin-bottom: 0;
+	}
+
+}

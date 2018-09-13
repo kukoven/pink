@@ -1,0 +1,90 @@
+.photo {
+
+	&--position:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	&--panorama {
+		position: relative;
+
+		&::before {
+			content: "Панорама дня";
+
+			position: absolute;
+			top: 0;
+			right: 20px;
+
+			width: 140px;
+			padding: 6px 0;
+
+			font-size: 12px;
+			line-height: 24px;
+			font-weight: 700;
+
+			background-color: #d22856;
+			text-align: center;
+			color: #ffffff;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.photo__wrapper {
+	.container();
+}
+
+.photo__link {
+	display: block;
+}
+
+.photo__img {
+	display: block;
+
+	&--panorama {
+		width: 100%;
+	}
+}
+
+@media @tablet-width {
+
+	.photo {
+		width: 300px;
+
+		&--position:nth-last-child(2) {
+			margin-bottom: 0;
+		}
+
+		&--panorama {
+			width: auto;
+
+			&::before {
+				top: 57px;
+				right: 40px;
+			}
+
+			&:nth-last-child(2) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+}
+
+@media @desktop-width {
+
+	.photo {
+
+		&--position:nth-last-child(3) {
+			margin-bottom: 0;
+		}
+
+		&--panorama {
+
+			&::before {
+				top: 54px;
+				right: 130px;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,199 @@
+.intro {
+	position: relative;
+
+	background-image: url("../img-min/iphone-in-hand-mobile@1x.png"), url("../img-min/background-mobile@1x.jpg");
+	background-repeat: no-repeat;
+	background-position: left 148px, center top;
+	background-size: 320px auto, auto auto;
+	background-color: @bg-darkblue;
+
+	@media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+		background-image: url("../img-min/iphone-in-hand-mobile@2x.png"), url("../img-min/background-mobile@2x.jpg");
+		background-size: 320px auto, 759px auto;
+	}
+
+	&--photos,
+	&--form {
+		background-image: url('../img-min/background-mobile@1x.jpg');
+		background-position: center top;
+		background-size: auto;
+
+		@media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+			background-image: url('../img-min/background-mobile@2x.jpg');
+			background-size: 759px auto;
+		}
+	}
+}
+
+.intro__wrapper {
+	display: flex;
+	flex-direction: column;
+
+	.container();
+}
+
+.intro__slogan {
+	min-height: 461px;
+	margin: 0;
+
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 300;
+	text-align: center;
+	color: #ffffff;
+
+	&--photos {
+		min-height: auto;
+		padding-top: 92.5px;
+		padding-bottom: 80.5px;
+
+		line-height: 31px;	
+	}
+
+	&--form {
+		min-height: auto;
+		padding-top: 97px;
+		padding-bottom: 50px;	
+	}
+}
+
+.intro__slogan-text {
+	display: none;
+
+	&--photos,
+	&--form {
+		display: inline;
+	}
+}
+
+@media @tablet-width {
+
+	.intro {
+		background-image: url("../img-min/iphone-in-hand-tablet@1x.png"), url("../img-min/background-tablet@1x.jpg");
+		background-repeat: no-repeat;
+		background-position: right bottom, center top;
+		background-size: 700px auto, auto auto;
+
+		@media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+			background-image: url("../img-min/iphone-in-hand-tablet@2x.png"),url(../img-min/background-tablet@2x.jpg);
+			background-size: 700px auto, 1200px auto;
+		}
+
+		&--photos,
+		&--form {
+			background-image: url('../img-min/background-tablet@1x.jpg');
+			background-repeat: no-repeat;
+			background-position: center top;
+			background-size: auto;
+
+			@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+				background-image: url('../img-min/background-tablet@2x.jpg');
+				background-size: 1200px auto;
+			}
+		}
+	}
+
+	.intro__wrapper {
+		min-height: 729px;
+
+		&--photos,
+		&--form {
+			min-height: auto;
+		}
+	}
+
+	.intro__slogan {
+		width: 300px;
+		min-height: auto;
+		margin-top: 223px;
+		margin-bottom: 26px;
+
+		font-size: 40px;
+		line-height: 50px;
+
+		&--photos {
+			width: auto;
+			margin-top: 0;
+			margin-bottom: 0;
+			padding-top: 180.5px;
+			padding-bottom: 139.5px;
+
+			font-size: 50px;
+			line-height: 60px;			
+		}
+
+		&--form {
+			width: auto;
+			margin-top: 0;
+			margin-bottom: 0;
+			padding-top: 185px;
+			padding-bottom: 75px;
+
+			font-size: 50px;
+			line-height: 60px;	
+		}
+	}
+
+	.intro__slogan-text {
+		display: inline-block;
+		padding: 0 53px;
+	}
+}
+
+@media @desktop-width {
+	
+	.intro {
+		background-image: url("../img-min/iphone-in-hand-desktop@1x.png"), url("../img-min/background-desktop@1x.jpg");
+		background-repeat: no-repeat;
+		background-position: right bottom, center top;
+		background-size: 1050px auto, auto auto;
+
+		@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+			background-image: url("../img-min/iphone-in-hand-desktop@2x.png"), url("../img-min/background-desktop@1x.jpg");
+			background-size: 1050px auto, auto auto;
+		}	
+
+		&--photos,
+		&--form {
+			background-image: url('../img-min/background-desktop@1x.jpg');
+			background-repeat: no-repeat;
+			background-position: center top;
+			background-size: auto;
+		}
+	}
+
+	.intro__wrapper {
+		min-height: 853px;
+
+		&--photos,
+		&--form {
+			min-height: auto;
+		}
+	}
+
+	.intro__slogan {
+		margin-top: 223px;
+		margin-bottom: 45px;
+
+		font-size: 50px;
+		line-height: 62px;
+
+		&--photos {
+			margin-top: 0;
+			margin-bottom: 0;
+			padding-top: 174px 200px 100px 200px;
+		}
+
+		&--form {
+			margin-top: 0;
+			margin-bottom: 0;
+			padding-top: 180px;
+			padding-bottom: 94px;	
+		}
+	}
+
+	.intro__slogan-text {
+		padding: 0;
+	}
+
+}

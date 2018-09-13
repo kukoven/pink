@@ -1,0 +1,141 @@
+.main-nav {
+	position: relative;
+	z-index: 1;
+}
+
+.main-nav__list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+
+@media (max-width: 1199px) {
+
+	.main-nav--closed {
+		display: none;
+	}
+
+	.main-nav--opened,
+	.main-nav--nojs {
+		background-color: #283645;
+		display: block;
+	}
+
+	.main-nav--opened {
+		animation-name: open-menu;
+		animation-duration: 0.6s;
+	}
+
+	.main-nav--opened .main-nav__border-wrapper,
+	.main-nav--nojs .main-nav__border-wrapper {
+		border-bottom: 1px solid #000000;
+	}
+
+	.main-nav--opened .main-nav__list,
+	.main-nav--nojs .main-nav__list {
+		display: block;
+	}
+
+	.main-nav--nojs .main-nav__link,
+	.main-nav--opened .main-nav__link {
+		display: block;
+		padding-top: 15px;
+		padding-bottom: 15px;
+
+		font-size: 18px;
+		line-height: 32px;
+		font-weight: 700;
+		color: #ffffff;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		border-top: 1px solid rgba(255, 255, 255, 0.15);
+		border-bottom: 1px solid #000000;
+
+		transition-property: color;
+		transition-duration: 0.3s;
+
+		&:hover {
+			color: #d22856;
+		}
+
+		&:active {
+			color: rgba(210, 40, 86, 0.3);
+		}
+	}
+
+}
+
+@media @desktop-width {
+
+	.main-nav__list {
+		display: flex;
+		justify-content: space-between;
+
+		width: 623px;
+	}
+
+	.main-nav__link {
+		position: relative;
+
+		display: block;
+		padding-top: 48px;
+		padding-bottom: 44px;
+
+		font-size: 18px;
+		line-height: 18px;
+		font-weight: 400;
+		color: #ffffff;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		transition: 0.3s;
+
+		&::after {
+			content: "";
+
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			right: 50%;
+
+			height: 0;
+
+			transition: 0.3s;
+		}
+
+		&:hover::after {
+			content: "";
+
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+
+			height: 2px;
+			
+			background-color: #ffffff;
+		}
+
+		&--active:hover {
+			color: #d22856;
+
+			cursor: default;
+
+			&::after {
+				background-color: #d22856;
+			}
+		}
+
+		&:active {
+			color: rgba(255, 255, 255, 0.3);
+
+			&::after {
+				display: none;
+			}
+		}
+	}
+}

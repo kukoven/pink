@@ -1,0 +1,137 @@
+.button {
+	display: block;
+
+	padding-top: 16px;
+	padding-bottom: 15px;
+
+	text-align: center;
+	text-decoration: none;
+	background-color: transparent;
+	border: 3px solid #ffffff;
+	border-radius: 35px;
+ 
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 18px;
+
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+
+	transition-property: color, background-color, border-color;
+	transition-duration: 0.3s;
+
+	&:hover {
+		color: #d22856;
+		background-color: #ffffff;
+	}
+
+	&:active {
+		color: rgba(210, 40, 86, 0.3);
+	}
+
+	&:focus {
+		box-shadow: 0 0 10px gold;
+	}
+
+	&--post {
+		width: 100%;
+
+		border-color: #d22856;
+		color: #d22856;
+
+		&:hover {
+			background-color: #d22856;
+			color: #ffffff;
+		}
+
+		&:active {
+			color: rgba(255, 255, 255, 0.3);
+		}
+	}
+
+	&--cancel {
+		width: 100%;
+
+		border-color: rgba(40, 54, 69, 0.1);
+		color: rgba(40, 54, 69, 0.1);
+
+		&:hover {
+			border-color: rgba(40, 54, 69, 0.3);
+			color: rgba(40, 54, 69, 0.3);
+			background-color: transparent;
+		}
+
+		&:active {
+			border-color: transparent;
+			color: rgba(255, 255, 255, 0.3);
+			background-color: rgba(40, 54, 69, 0.3);
+		}
+	}
+
+	&--post-form {
+		width: 100%;
+		padding: 16px 0 14px 0;
+
+		line-height: 30px;
+
+		text-transform: uppercase;
+		color: #ffffff;
+		background-color: #2aab6d;
+		border-radius: 5px;
+		border-color: #2aab6d;
+		border-width: 2px;
+		color: #ffffff;
+
+		&:hover {
+			color: #ffffff;
+			background-color: #1c9b5e;
+
+		}
+
+		&:active {
+			color: rgba(255, 255, 255, 0.3);
+			background-color: #1c9b5e;
+
+			outline: none;
+		}
+	}
+}
+
+
+@media @tablet-width {
+
+	.button {
+		font-size: 21px;
+
+		&--post,
+		&--cancel {
+			font-size: 18px;
+		}
+
+		&--post-form {
+			width: 300px;
+
+			font-size: 18px;		
+		}
+
+		&--success-close,
+		&--failed-close {
+			margin: 0 auto;
+		}
+	}
+
+}
+
+@media @desktop-width {
+
+	.button {
+		&--post,
+		&--cancel {
+			width: 183px;
+		}
+	} 
+
+}
