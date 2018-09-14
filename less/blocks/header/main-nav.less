@@ -19,7 +19,7 @@
 
 	.main-nav--opened,
 	.main-nav--nojs {
-		background-color: #283645;
+		background-color: @darkblue;
 		display: block;
 	}
 
@@ -30,7 +30,7 @@
 
 	.main-nav--opened .main-nav__border-wrapper,
 	.main-nav--nojs .main-nav__border-wrapper {
-		border-bottom: 1px solid #000000;
+		border-bottom: 1px solid @black;
 	}
 
 	.main-nav--opened .main-nav__list,
@@ -47,19 +47,19 @@
 		font-size: 18px;
 		line-height: 32px;
 		font-weight: 700;
-		color: #ffffff;
+		color: @white;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
 
 		border-top: 1px solid rgba(255, 255, 255, 0.15);
-		border-bottom: 1px solid #000000;
+		border-bottom: 1px solid @black;
 
 		transition-property: color;
 		transition-duration: 0.3s;
 
 		&:hover {
-			color: #d22856;
+			color: @text-hover;
 		}
 
 		&:active {
@@ -88,7 +88,7 @@
 		font-size: 18px;
 		line-height: 18px;
 		font-weight: 400;
-		color: #ffffff;
+		color: @white;
 		text-decoration: none;
 		text-transform: uppercase;
 
@@ -117,16 +117,16 @@
 
 			height: 2px;
 			
-			background-color: #ffffff;
+			background-color: @white;
 		}
 
 		&--active:hover {
-			color: #d22856;
+			color: @text-hover;
 
 			cursor: default;
 
 			&::after {
-				background-color: #d22856;
+				background-color: @text-hover;
 			}
 		}
 

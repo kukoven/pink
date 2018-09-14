@@ -22,8 +22,7 @@
 .page-logo__logo {
 	display: block;
 
-	fill: #ffffff;
-	color: #d22856;
+	fill: @white;
 
 	transition-property: fill, opacity;
 	transition-duration: 0.3s;
@@ -41,11 +40,11 @@
 
 .page-logo__logo-link[href] .page-logo__logo {
 	&:hover {
-		fill: #d22856;
+		fill: @text-hover;
 	}
 
 	&:active {
-		fill: #ffffff;
+		fill: @white;
 		opacity: 0.3;
 	}
 
@@ -82,16 +81,16 @@
 		height: 4px;
 		transition: all 0.3s;
 
-		background-color: #ffffff;
-		box-shadow: 0 9px 0 0 #ffffff,
-							  0 18px 0 0 #ffffff;
+		background-color: @white;
+		box-shadow: 0 9px 0 0 @white,
+							  0 18px 0 0 @white;
 	}
 
 	&:hover::before,
 	&:hover::after {
-		background-color: #d22856;
-		box-shadow: 0 9px 0 0 #d22856,
-								0 18px 0 0 #d22856;
+		background-color: @text-hover;
+		box-shadow: 0 9px 0 0 @text-hover,
+								0 18px 0 0 @text-hover;
 	}
 
 	&:active::before,
@@ -115,7 +114,7 @@
 		width: 31px;
 		height: 4px;
 
-		background-color: #ffffff;
+		background-color: @white;
 
 		transition: all 0.3s;
 	}
@@ -130,7 +129,7 @@
 
 	&:hover::before,
 	&:hover::after {
-		background-color: #d22856;
+		background-color: @text-hover;
 		
 	}
 
@@ -144,8 +143,8 @@
 
 	.page-logo--opened,
 	.page-logo--nojs {
-		border-bottom: 1px solid #000000;
-		background-color: #283645;
+		border-bottom: 1px solid @black;
+		background-color: @darkblue;
 	}
 
 	.page-logo--nojs .page-logo__logo {
