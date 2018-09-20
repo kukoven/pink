@@ -1,6 +1,5 @@
 .table-of-prices {
 	border-collapse: collapse;
-	//border-spacing: 2px;
 }
 
 .table-of-prices__title,
@@ -19,7 +18,7 @@
 	padding-bottom: 19px;
 	overflow: hidden;
 
-	background-color: #283645;
+	background-color: @darkblue;
 	border-top: none;
 	border-left: none;	
 
@@ -35,7 +34,7 @@
 
 	font-weight: 700;
 
-	color: #ffffff;
+	color: @white;
 
 	&--popular::after {
 		content: "ХИТ";
@@ -50,7 +49,7 @@
 		font-size: 14px;
 		font-weight: 600;
 
-		color: #ffffff;
+		color: @white;
 		background-color: #d22856;
 		transform: rotate(-45deg);
 	}
@@ -62,7 +61,7 @@
 	font-size: 24px;
 	font-weight: 300;
 
-	color: #ffffff;
+	color: @white;
 }
 
 .table-of-prices__cell {
@@ -73,8 +72,8 @@
 	font-size: 14px;
 	font-weight: 400;
 
-	color: #283645;
-	background-color: #ffffff;
+	color: @darkblue;
+	background-color: @white;
 
 	&--hidden {
 		display: none;
@@ -158,8 +157,8 @@
 			font-size: 14px;
 			font-weight: 600;
 
-			color: #ffffff;
-			background-color: #d22856;
+			color: @white;
+			background-color: @text-hover;
 			transform: rotate(-45deg);
 		}
 	}

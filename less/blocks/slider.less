@@ -8,8 +8,8 @@ input[value="slider-btn-3"]:checked ~ .slider__controls label[for="slider-btn-3"
 input[value="table-slider-btn-1"]:checked ~ .slider__controls label[for="table-slider-btn-1"],
 input[value="table-slider-btn-2"]:checked ~ .slider__controls label[for="table-slider-btn-2"],
 input[value="table-slider-btn-3"]:checked ~ .slider__controls label[for="table-slider-btn-3"] {
-	border: 3px solid #283645;
-	background-color: #fff;
+	border: 3px solid @darkblue;
+	background-color: @white;
 }
 
 input[value="slider-btn-1"]:checked ~ .slider__inner .slider__slides {
@@ -68,7 +68,7 @@ input[value="table-slider-btn-3"]:checked ~ .slider__inner .slider__slides--tabl
 
 	background-color: rgba(40, 54, 69, 0.3);
 	border-radius: 50%;
-	border: 3px solid white;
+	border: 3px solid @white;
 	cursor: pointer;
 
 	transition: all 0.5s;
@@ -87,7 +87,7 @@ input[value="table-slider-btn-3"]:checked ~ .slider__inner .slider__slides--tabl
 	}
 
 	&--table {
-		border: 3px solid #f2f2f2;
+		border: 3px solid @gray;
 	}
 }
 
