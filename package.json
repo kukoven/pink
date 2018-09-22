@@ -1,5 +1,5 @@
 {
-  "name": "pink",
+  "name": "site2",
   "version": "1.0.0",
   "description": "",
   "main": "gulpFile.js",
@@ -23,7 +23,6 @@
     "gulp-uglify-es": "^1.0.4",
     "gulp-webp": "^3.0.0",
     "posthtml-include": "^1.1.0",
-    "pump": "^3.0.0",
     "run-sequence": "^2.2.1"
   },
   "scripts": {
