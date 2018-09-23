@@ -6,30 +6,8 @@
 	padding-bottom: 19px;
 	padding-left: 18px;
 
-	background-color: #f2f2f2;
+	background-color: @gray;
 	text-align: left;
-
-	/*&::after {
-		content: "Нравится: 215";
-
-		position: absolute;
-		left: 18px;
-		bottom: 23px;
-
-		width: 92px;
-		padding-left: 32px;
-
-		font-size: 12px;
-		line-height: 12px;
-		font-weight: 400;
-
-		text-transform: uppercase;
-		color: #d22856;
-		background-image: url("../img-original/comments-like.svg");
-		background-repeat: no-repeat;
-		background-size: 13px 12px;
-		background-position: left top;
-	}*/
 }
 
 .comment__author {
@@ -37,7 +15,7 @@
 	line-height: 24px;
 	font-weight: 700;
 
-	color: #283645;
+	color: @darkblue;
 }
 
 .comment__time {
@@ -64,7 +42,7 @@
 	font-weight: 400;
 
 	text-transform: uppercase;
-	color: #d22856;
+	color: @text-hover;
 	background-image: url("../img-min/comments-like.svg");
 	background-repeat: no-repeat;
 	background-size: 13px 12px;
@@ -82,13 +60,6 @@
 		&--panorama {
 			height: 75px;
 		}
-
-		/*&::after {
-			top: 30px;
-			right: 28px;
-			bottom: auto;
-			left: auto;
-		}*/
 	}
 
 	.comment__likes {

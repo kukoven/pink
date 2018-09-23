@@ -31,7 +31,7 @@
 	width: 240px;
 	height: 2px;
 
-	background-color: #283645;
+	background-color: @darkblue;
 
 	&::before {
 		content: "";
@@ -42,9 +42,9 @@
 		width: 12px;
 		height: 12px;
 
-		border: 2px solid #d22856;
+		border: 2px solid @text-hover;
 		border-radius: 50%;
-		background-color: #f2f2f2;
+		background-color: @gray;
 	}
 }
 
@@ -154,10 +154,6 @@
 			background-size: 32px 32px;
 			background-position: 7px 4px;
 		}
-
-		/*&:not(:last-child) {
-			margin-bottom: 0;
-		}*/
 	}
 
 	.range-controls__item {
