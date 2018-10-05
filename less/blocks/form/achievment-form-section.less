@@ -1,5 +1,5 @@
 .achievment-form-section {
-	background-color: #f2f2f2;
+	background-color: @gray;
 
 	&--position {
 		margin-bottom: 31px;
@@ -30,7 +30,7 @@
 
 	text-align: center;
 	text-transform: uppercase;
-	color: #d22856;
+	color: @text-hover;
 }
 
 .achievment-form-section__list {
@@ -62,7 +62,7 @@
 	line-height: 30px;
 	font-weight: 400;
 
-	color: #283645;
+	color: @darkblue;
 	cursor: pointer;
 	user-select: none;
 
@@ -79,7 +79,7 @@
 
 	border: 2px solid #e5e5e5;
 	border-radius: 5px;
-	background-color: #ffffff;
+	background-color: @white;
 	transform: translateY(-19.5px);
 }
 
@@ -100,21 +100,21 @@
 	//outline: thin dotted;
 	//outline: 5px auto -webkit-focus-ring-color;
 
-	border-color: #283645;
+	border-color: @darkblue;
 
 	transition-property: border-color;
 	transition-duration: 0.3s;
 }
 
 .achievment-form-section__label:hover .achievment-form-section__design-checkbox {
-	border-color: #283645;
+	border-color: @darkblue;
 
 	transition-property: border-color;
 	transition-duration: 0.3s;
 }
 
 .achievment-form-section__label:active .achievment-form-section__design-checkbox {
-	border-color: #d22856;
+	border-color: @text-hover;
 
 	transition-property: border-color;
 	transition-duration: 0s;

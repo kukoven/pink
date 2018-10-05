@@ -1,5 +1,5 @@
 .application-form-section {
-	background-color: #f2f2f2;
+	background-color: @gray;
 
 	&--position {
 		margin-bottom: 53px;
@@ -28,7 +28,7 @@
 
 	text-align: center;
 	text-transform: uppercase;
-	color: #d22856;
+	color: @text-hover;
 }
 
 .application-form-section__list {
@@ -54,7 +54,7 @@
 }
 
 .application-form-section__input:focus + .application-form-section__design-radio-btn {
-	border: 2px solid #283645;
+	border: 2px solid @darkblue;
 }
 
 .application-form-section__label {
@@ -62,18 +62,18 @@
 
 	line-height: 30px;	
 
-	color: #283645;
+	color: @darkblue;
 }
 
 .application-form-section__label:hover .application-form-section__design-radio-btn {
-	border-color: #283645;
+	border-color: @darkblue;
 
 	transition-property: border-color;
 	transition-duration: 0.3s;
 }
 
 .application-form-section__label:active .application-form-section__design-radio-btn {
-	border-color: #d22856;
+	border-color: @text-hover;
 
 	transition-property: border-color;
 	transition-duration: 0s;
@@ -89,7 +89,7 @@
 
 	border: 2px solid #e5e5e5;
 	border-radius: 50%;
-	background-color: #ffffff;
+	background-color: @white;
 }
 
 input:checked + .application-form-section__design-radio-btn {
@@ -103,7 +103,7 @@ input:checked + .application-form-section__design-radio-btn {
 		height: 14px;
 
 		border-radius: 50%;
-		background-color: #d22856;
+		background-color: @text-hover;
 		transform: translate(-7px, -7px);
 	}
 }
