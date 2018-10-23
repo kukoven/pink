@@ -15,6 +15,7 @@ var run = require('run-sequence');
 var del = require('del');
 var uglify = require('gulp-uglify-es').default;
 var concat = require('gulp-concat');
+var ghPages =require('gulp-gh-pages');
 
 gulp.task('style', function () {
 	gulp.src('less/**/*.less')
@@ -106,6 +107,11 @@ gulp.task('js', function() {
 		.pipe(gulp.dest('js-min'))
 		.pipe(gulp.dest('build/js-min'))
 		.pipe(server.stream());
+});
+
+gulp.task('deploy', function() {
+	return gulp.src('build/**/*')
+		.pipe(ghPages());
 });
 
 gulp.task('build', function(done) {
